@@ -1,0 +1,103 @@
+<html>
+    <style>
+        chart1{font-family: Ubuntu;}
+        chart2{font-family: Ubuntu;}
+    </style> <br><br>
+<head>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <chart1 style="font-family: Ubuntu, regular;"><U>Evolution of Gender Pay Gap, 1993-94 to 2011-12 (%ages)</U></chart1>     
+</head>
+    <body>
+    <div1>
+    <canvas id="evolutionGPG"></canvas>
+  </div1>
+        <script>
+        var data= {
+            labels: ['Causual Urban Workers', 'Regular Rural Workers', 'Causual Rural Workers', 'Regular Urban Workers'],
+            datasets: [
+            {
+              label: '1993-94',
+              data: [43, 41, 34, 21]  
+            },
+            {
+            label: '2004-05',
+            data: [41, 41, 37, 25]  
+            },
+            {
+            label: '2011-12',
+            data: [39, 38, 31, 22]    
+            }
+            ]
+        };
+
+        var ctx = document.getElementById('evolutionGPG').getContext('2d');
+        var evolutionGPG = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+      </script>
+    
+    </body>
+    <br><br><br><br><br><br><br><br>
+    <head>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <chart2 style="font-family: Ubuntu, regualr;"><U>Nominal Average Daily Wages for Regular Workers, by the Level of Education, 2011-12 (INR)</U></chart2>     
+</head>
+    <body>
+    <div1>
+    <canvas id="educationGPG"></canvas>
+  </div1>
+        <script>
+        var data= {
+            labels: ['Regular Urban Male Workers', 'Regular Rural Male Workers', 'Regualr Urban Female Workers', 'Regular Rural Female Workers'],
+            datasets: [
+            {
+              label: 'below primary',
+              data: [206, 222, 317, 735]  
+            },
+            {
+              label: 'primary',
+              data: [173, 187, 280, 492]  
+            },
+            {
+            label: 'secondary',
+            data: [123, 129, 241, 566]  
+            },
+            {
+            label: 'higher degree (inc. vocational)',
+            data: [91, 100, 150, 361]    
+            }
+            ]
+        };
+
+        var ctx = document.getElementById('educationGPG').getContext('2d');
+        var evolutionGPG = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+      </script>
+    
+    </body>
+</html>

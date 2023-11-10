@@ -1,0 +1,329 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Skranji' rel='stylesheet'>
+    <link href='https fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <title>Gender Pay Gap</title>
+    <style>
+        div1 {
+            width: 100%;
+            height: 5650px;
+            background-color: rgba(244, 234, 225, 1);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        break {
+            width: 100%;
+            height: 100vh;
+            background-image: url(images2/break.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            z-index: 100;
+            top: 0px;
+            left: 0px;
+        }
+
+        .flip-card1-container {
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            z-index: 3;
+        }
+        .flip-card1 {
+            perspective: 1000px;
+            width: 450px;
+            height: 450px;
+            margin: 40px;
+            display: inline-block;
+        }
+
+        .flip-card-inner1 {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            position: absolute;
+            
+            left: 10px;
+            top: 880px;
+        }
+
+        .flip-card1:hover .flip-card-inner1 {
+            transform: rotateY(180deg);
+            
+        }
+
+        .flip-card-front1, .flip-card-back1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            
+        }
+
+        .flip-card-front1 {
+            background-color: rgba(240.45865148305893, 196.38785630464554, 155.70726960897446, 1);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+            border-radius: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .flip-card-back1 {
+            background-color: rgba(240.45865148305893, 196.38785630464554, 155.70726960897446, 1);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+            border-radius: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(180deg);
+            
+        }
+
+        .flip-card-content1 {
+            font-family: Ubuntu, regular;
+            text-align: center;
+            font-size: 36px;
+            letter-spacing: -1.1px;
+            color: rgba(0, 0, 0, 1);
+            
+        }
+        
+        circle9{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid black;
+    border-radius: 500px;
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 418px;
+    height: 418px;
+    position: absolute;
+    left: 65px;
+    top: 3480px;
+            }
+            circle10{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid black;
+    border-radius: 500px;
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 418px;
+    height: 418px;
+    position: absolute;
+    left: 511px;
+    top: 3480px;
+            }
+            circle11{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid black;
+    border-radius: 500px;
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 418px;
+    height: 418px;
+    position: absolute;
+    left: 957px;
+    top: 3480px;
+            }
+        globalisation{
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    align-content: center;
+    left: 92px;
+    top: 3505px;
+    border: 2px solid black;
+    filter: grayscale(80%);
+    border-top-left-radius: 187.5px;
+    border-top-right-radius: 187.5px;
+    border-bottom-left-radius: 187.5px;
+    border-bottom-right-radius: 187.5px;
+    background-image: url(images2/globalisation1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+            }
+        .flip-card-content1 {
+            font-family: Ubuntu, regular;
+            text-align: center;
+            font-size: 36px;
+            letter-spacing: -1.1px;
+            color: rgba(0, 0, 0, 1);
+            
+        }
+            socialjustice{
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    left: 537px;
+    top: 3505px;
+    border: 2px solid black;
+    filter: grayscale(100%);
+    border-top-left-radius: 187.5px;
+    border-top-right-radius: 187.5px;
+    border-bottom-left-radius: 187.5px;
+    border-bottom-right-radius: 187.5px;
+    background-image: url(images2/socialjustice2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+            }
+            marginalisation{
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    left: 982px;
+    top: 3505px;
+    border: 2px solid black;
+    filter: grayscale(80%);
+    border-top-left-radius: 187.5px;
+    border-top-right-radius: 187.5px;
+    border-bottom-left-radius: 187.5px;
+    border-bottom-right-radius: 187.5px;
+    background-image: url(images2/marginalization.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+            }
+        together{
+    top: 4700px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(images2/we_are_women_together.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div1></div1>
+    <break></break>
+    <div class="flip-card1-container">
+  
+    <div class="row">
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:1000px;left:500px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Mentoring and Empowerment
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - skill and entrepreneurship development<br>- addressing imposter syndrome
+                </div>
+            </div>
+        </div>
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:1100px;left:500px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Government Intervension
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - laws, acts and policies to improve the<br>situation quota for women in leadership<br>- monitoring salary structures and pay equity
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="row">
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:1000px;left:580px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Corporate Policies
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - maternity and paternity benefits<br>- diversity and inclusion programs
+                </div>
+            </div>
+        </div>
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:1100px;left:580px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Advocacy and Awareness
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - campaigns for gender equality<br>- grassroots movements
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="row">
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:2250px;left:-550px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Education Reforms
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - quality education<br>- questioning gender bias in curricula
+                </div>
+            </div>
+        </div>
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:2350px;left:-550px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Data and Research
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - continual monitoring and analysis<br>- collaborative research between government,<br>academia and NGOs
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="row">
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:2250px;left:-470px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Changing the Mindset
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - equal opportunities<br>- challenging stereotypes and bias
+                </div>
+            </div>
+        </div>
+        <div class="flip-card1">
+            <div class="flip-card-inner1" style="top:2350px;left:-470px">
+                <div class="flip-card-front1">
+                    <div class="flip-card-content1">
+                        Global Perspective
+                    </div>
+                </div>
+                <div class="flip-card-back1" style="font-size: 20px">
+                    - learning from other countries’ experiences<br>- international collaborations
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <circle9></circle9><circle10></circle10><circle11></circle11>
+        <globalisation></globalisation><socialjustice></socialjustice><marginalisation></marginalisation>
+        <together></together>
+        
+        <iframe src="gsminfo.html" style="left:120px;top:4000px;height: 1600px; width: 1220px; z-index: 2; position: absolute; border: none"></iframe>
+    <script>
+        
+        document.querySelectorAll('.flip-card1').forEach(function(card, index) {
+            card.addEventListener('click', function() 
+                                                          
+    </script>
+    </div>
+    </body>
+</html>
